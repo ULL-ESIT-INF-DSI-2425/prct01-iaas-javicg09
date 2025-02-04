@@ -26,7 +26,7 @@ Para conectarnos a la **Máquina Virtual (MV)** se ha utilizado el protocolo **S
 Tras introducir las credenciales apropiadas y la dirección de la MV, accedemos a su consola para modificar y personalizar el entorno, por ejemplo cambiando el nombre del host.
 
 > **Ejemplo de modificación del HostName**  
-> ![Demostración de cómo se modifica el hostname](./Imagenes/hostname.png)
+> ![Demostración de cómo se modifica el hostname](../Imagenes/hostname.png)
 
 ---
 
@@ -37,11 +37,11 @@ Con el fin de agilizar los accesos sucesivos a la MV, se ha llevado a cabo la co
 2. Se crea un par de claves (pública y privada).  
 3. Se transfiere la clave pública a la MV para que reconozca al usuario local sin necesidad de contraseña.  
 
-![Ejemplo de proceso para no requerir contraseña](./Imagenes/iniciosincontraseña.png)
+![Ejemplo de proceso para no requerir contraseña](../Imagenes/iniciosincontraseña.png)
 
 Tras ello, se puede configurar el archivo que gestiona las opciones de SSH para automatizar aún más la conexión, haciendo la experiencia de inicio de sesión mucho más rápida.
 
-![Evidencia de inicio sin credenciales](./Imagenes/iniciosincredenciales.png)
+![Evidencia de inicio sin credenciales](../Imagenes/iniciosincredenciales.png)
 
 ---
 
@@ -55,13 +55,13 @@ Tras ello, se puede configurar el archivo que gestiona las opciones de SSH para 
 
 Para trabajar con Git, es necesario instalarlo y, posteriormente, configurar algunos parámetros básicos como el nombre del usuario y su correo electrónico. Una vez instalado, se procede a comprobar la versión y, si se desea, a configurar un prompt que facilite la gestión de ramas.
 
-![Git en la máquina virtual](./Imagenes/git.png)
+![Git en la máquina virtual](../Imagenes/git.png)
 
 #### Importando un Repositorio
 
 Como siguiente paso, se clona el repositorio de la asignatura en el entorno local (o en la MV). Esto permite realizar modificaciones, commits y push de cambios al repositorio remoto de la asignatura.
 
-![Evidencia de repositorio importado](./Imagenes/repositorioimportado.png)
+![Evidencia de repositorio importado](../Imagenes/repositorioimportado.png)
 
 ---
 
@@ -70,7 +70,7 @@ Como siguiente paso, se clona el repositorio de la asignatura en el entorno loca
 Para ejecutar JavaScript fuera del navegador se utiliza **Node.js**, que se ha instalado en la MV.  
 Este software resulta fundamental para algunos entornos de desarrollo basados en JavaScript, complementado por el gestor de paquetes asociado, que habitualmente es **npm**.
 
-![Node.js en la máquina virtual](./Imagenes/node.png)
+![Node.js en la máquina virtual](../Imagenes/node.png)
 
 ---
 
