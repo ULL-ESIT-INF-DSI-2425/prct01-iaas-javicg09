@@ -16,6 +16,7 @@ En este informe se describen, de forma general, algunos aspectos clave en el ent
 - El uso de **ESLint** y **Prettier** para mantener la calidad y estilo del código.
 
 Al finalizar la práctica, esta es la configuración resultante de nuestro entorno de trabajo:
+
 ![VSCode configurado](../Imagenes/vscode.png)
 
 ---
