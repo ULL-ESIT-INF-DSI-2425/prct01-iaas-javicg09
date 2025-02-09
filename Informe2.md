@@ -15,6 +15,9 @@ En este informe se describen, de forma general, algunos aspectos clave en el ent
 - La importancia de contar con **TypeScript** para proyectos JavaScript.
 - El uso de **ESLint** y **Prettier** para mantener la calidad y estilo del código.
 
+Al finalizar la práctica, esta es la configuración resultante de nuestro entorno de trabajo:
+![VSCode configurado](../Imagenes/vscode.png)
+
 ---
 
 ## Conexión SSH en Visual Studio Code
