@@ -94,8 +94,8 @@ export class MyList<T> {
   }
 
   /**
-   * Map
-   */
+  * Map
+  */
 
   /**
   * Convierte la lista en un array estándar.
