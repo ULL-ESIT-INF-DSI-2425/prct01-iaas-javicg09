@@ -94,8 +94,31 @@ export class MyList<T> {
   }
 
   /**
-  * Map
+  * @param func Función que transforma cada elemento.
+  * @returns Una nueva MyList con los elementos transformados.
   */
+  public map<U>(func: (item: T, index: number, list) => U): MyList<U> {
+    const result = new MyList<U>();
+    for (let i = 0; i < this.count; i++) {
+      const mapped = func(this.elements[i], i, this);
+      result.elements[result.count] = mapped;
+      result.count++;
+    }
+    return result;
+  }
+
+  /**
+  * Devuelve una nueva lista con los elementos en orden inverso.
+  * @returns Una nueva MyList con los elementos en orden inverso.
+  */
+  public reverse(): MyList<T> {
+    const result = new MyList<T>();
+    for (let i = this.count - 1; i >= 0; i--) {
+      result.elements[result.count] = this.elements[i];
+      result.count++;
+    }
+    return result;
+  }
 
   /**
   * Convierte la lista en un array estándar.

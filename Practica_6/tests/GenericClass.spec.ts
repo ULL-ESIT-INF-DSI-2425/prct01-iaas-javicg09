@@ -61,5 +61,32 @@ describe('MyList', () => {
     expect(filteredList.length()).toBe(3);
     expect(filteredList.toArray()).toEqual([3, 6, 9]);
   });
+
+  test('map: debe transformar los elementos de la lista', () => {
+    const list = new MyList<number>([1, 2, 3]);
+    const mapped = list.map(x => x * x);
+    expect(mapped.length()).toBe(3);
+    expect(mapped.toArray()).toEqual([1, 4, 9]);
+  });
+
+  test('map: debe transformar los elementos de la lista', () => {
+    const list = new MyList<number>([1, 2, 3]);
+    const mapped = list.map(x => x * 3);
+    expect(mapped.length()).toBe(3);
+    expect(mapped.toArray()).toEqual([3, 6, 9]);
+  });
+
+  test('map: debe transformar los elementos de la lista', () => {
+    const list = new MyList<number>([3, 6, 9]);
+    const mapped = list.map(x => x / 3);
+    expect(mapped.length()).toBe(3);
+    expect(mapped.toArray()).toEqual([1, 2, 3]);
+  });
+
+  test('reverse: debe invertir el orden de los elementos', () => {
+    const list = new MyList<number>([1, 2, 3, 4]);
+    const reversed = list.reverse();
+    expect(reversed.toArray()).toEqual([4, 3, 2, 1]);
+  });
 });
 
