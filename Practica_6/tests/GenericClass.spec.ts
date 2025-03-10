@@ -88,5 +88,11 @@ describe('MyList', () => {
     const reversed = list.reverse();
     expect(reversed.toArray()).toEqual([4, 3, 2, 1]);
   });
+
+  test('reverse: debe invertir el orden de los elementos', () => {
+    const list = new MyList<number>([1, 3, 3, 4]);
+    const reversed = list.reverse();
+    expect(reversed.toArray()).toEqual([4, 3, 3, 1]);
+  });
 });
 
